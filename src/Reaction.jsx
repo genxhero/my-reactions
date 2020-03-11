@@ -4,9 +4,17 @@ import * as FA from 'react-icons/fa';
 import * as MD from "react-icons/md";
 
 const Reaction = props => {
-    const string = "FaAirbnb";
-    const icons = FA;
-    const Tag = icons[string];
+
+    const icon = props.icon;
+    let icons;
+    switch (props.library) {
+      case "MD":
+        icons = MD
+        break;
+      default:
+        icons = FA;
+    }
+    const Tag = icons[icon];
     debugger;
     return (
       <div>
@@ -15,8 +23,9 @@ const Reaction = props => {
     );
 }
 
-// Reaction.defaultProps = {
-//     icon: ICONS[]
-// }
+ Reaction.defaultProps = {
+     icon: "FaAirbnb",
+     library: "FA"
+ }
 
 export default Reaction;
