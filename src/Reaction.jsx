@@ -1,14 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import * as ICONS from 'react-icons';
+import * as FA from 'react-icons/fa';
+import * as MD from "react-icons/md";
 
 const Reaction = props => {
+    const string = "FaAirbnb";
+    const icons = FA;
+    const Tag = icons[string];
     debugger;
     return (
-        <div>
-
-        </div>
-    )
+      <div>
+        <Tag />
+      </div>
+    );
 }
 
 // Reaction.defaultProps = {
