@@ -4,7 +4,7 @@ import Reaction from './Reaction';
 const ReactionSection = props => {
     return (
         <div>
-            <Reaction library={} />
+            <Reaction library={"FA"} />
         </div>
     )
 }
