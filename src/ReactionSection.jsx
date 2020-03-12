@@ -7,6 +7,7 @@ import * as MD from "react-icons/md";
 const LIBRARIES = {"FA": FA, "MD": MD}
 
 const ReactionSection = props => {
+    const library = LIBRARIES[props.library]
     return (
         <div>
             <Reaction />
