@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <ReactionSection library={"FA"} />
+      <ReactionSection library={"MD"} />
     </div>
   );
 }
